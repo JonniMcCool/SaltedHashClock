@@ -15,8 +15,7 @@ module Encryption =
         let salted = Salt date userSalt
         Hash salted
 
-
-//module Validation =
-//    let Execute =
-//        
-//
+module Validation =
+    let Execute (hashToValidate: string) (date: System.DateTime) (userSalt: string) : bool =
+        let referenceResult = Encryption.Execute date userSalt
+        referenceResult = hashToValidate
