@@ -1,5 +1,8 @@
 # The Salted Hash Clock
 
+Inspired by a problem posed in episode "108 = Proofed Mates and Proved Dates" of the "A Problem Squared" podcast by Bec Hill and Matt Parker.
+Link: https://podcasts.apple.com/de/podcast/108-proofed-mates-and-proved-dates/id1490290676?i=1000705187520
+
 You want to prove you had an idea before a certain date?
 Easy: put the jist of your idea into the "Input Text" field, click the button below.
 Copy the hash and the hash date.
