@@ -12,7 +12,15 @@ namespace GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            textBox1.Text = SaltAndHash.Encryption.Execute(System.DateTime.UtcNow, "Hash");
+            var date = System.DateTime.Now;
+            var dateString = date.ToString(SaltAndHash.Encryption.dateFormat);
+            textBox2.Text = SaltAndHash.Encryption.Execute(date, textBox1.Text);
+            textBox3.Text = dateString;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            checkBox1.Checked = SaltAndHash.Validation.Execute(textBox5.Text, dateTimePicker1.Value, textBox4.Text);
         }
     }
 }
