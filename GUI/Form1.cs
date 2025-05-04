@@ -12,7 +12,7 @@ namespace GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            textBox1.Text = SaltAndHash.Say.hello(@"Hashed");
+            textBox1.Text = SaltAndHash.Encryption.Execute(System.DateTime.UtcNow, "Hash");
         }
     }
 }
